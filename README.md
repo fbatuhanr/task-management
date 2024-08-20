@@ -1,4 +1,4 @@
-# Live Demo: [task-management-two-alpha.vercel.app/](https://task-management-two-alpha.vercel.app)
+# Live Demo: [task-management-two-alpha.vercel.app](https://task-management-two-alpha.vercel.app)
 
 ![task-management](https://github.com/user-attachments/assets/4d3a9d53-7714-429e-bf13-ede14514f0f2)
 
