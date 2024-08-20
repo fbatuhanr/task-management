@@ -1,9 +1,10 @@
-import { FaBeer, FaCoffee, FaUser, FaHeart } from 'react-icons/fa';
+import { FaHeart, FaCheck, FaList } from 'react-icons/fa';
+import { FaBarsProgress } from 'react-icons/fa6';
 
 const icons = {
-    "beer": <FaBeer />,
-    "coffee": <FaCoffee />,
-    "user": <FaUser />,
+    "todo": <FaList />,
+    "progress": <FaBarsProgress />,
+    "completed": <FaCheck />,
     "heart": <FaHeart />,
 };
 

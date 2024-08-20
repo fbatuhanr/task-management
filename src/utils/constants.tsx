@@ -6,7 +6,7 @@ export const DEFAULT_SECTIONS: SectionProps[] = [
     id: "column-1",
     title: "To Do",
     bgColor: "#2ed7d7",
-    icon: "beerr",
+    icon: "todo",
     tasks: [
       {
         id: "task-1",
@@ -24,7 +24,7 @@ export const DEFAULT_SECTIONS: SectionProps[] = [
     id: "column-2",
     title: "In Progress",
     bgColor: "#00aaff",
-    icon: "coffee",
+    icon: "progress",
     tasks: [
       {
         id: "task-3",
@@ -42,7 +42,7 @@ export const DEFAULT_SECTIONS: SectionProps[] = [
     id: "column-3",
     title: "Completed",
     bgColor: "#a179f2",
-    icon: "user",
+    icon: "completed",
     tasks: []
   }
 ]
