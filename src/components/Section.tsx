@@ -85,7 +85,7 @@ const Section: React.FC<SectionComponentProps> = ({ section, isIndexEven, moveTa
                 </div>
             </div>
 
-            <div ref={drop} className="h-[calc(100vh-4.5rem)]">
+            <div ref={drop} className="min-h-[calc(100vh-4.5rem)] h-[calc(100%-4.5rem)] pb-4">
                 {currTasks.map((task: TaskProps) => (
                     <Task key={task.id} task={task} />
                 ))}
