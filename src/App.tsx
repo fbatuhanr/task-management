@@ -33,7 +33,7 @@ const App = () => {
   const handleReset = async () => {
 
     const result = await Swal.fire({
-      title: "Do you want to reset all?",
+      title: "Do you want to reset to default?",
       showCancelButton: true,
       confirmButtonText: "Reset",
       confirmButtonColor: "#dc2626"
