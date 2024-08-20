@@ -1,3 +1,5 @@
+![task-management](https://github.com/user-attachments/assets/4d3a9d53-7714-429e-bf13-ede14514f0f2)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
