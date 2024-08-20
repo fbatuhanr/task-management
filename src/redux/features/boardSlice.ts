@@ -1,4 +1,4 @@
-import { createSlice, current, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { DEFAULT_NEW_SECTION_TEMPLATE, DEFAULT_NEW_TASK_TEMPLATE, DEFAULT_SECTIONS } from '../../utils/constants';
 import { SectionProps } from '../../types/section';
 import { TaskProps } from '../../types/task';
@@ -16,7 +16,7 @@ const boardSlice = createSlice({
   name: 'board',
   initialState,
   reducers: {
-    resetBoard: (state) => {
+    resetBoard: () => {
       return initialState
     },
     clearBoard: (state) => {
@@ -25,7 +25,6 @@ const boardSlice = createSlice({
       })
     },
     deleteSection(state, action: PayloadAction<{ sectionId: string }>) {
-      // console.log(current(state));
       const { sectionId } = action.payload
       state.sections = state.sections.filter(i => i.id !== sectionId)
     },
@@ -39,7 +38,7 @@ const boardSlice = createSlice({
     moveTask(state, action: PayloadAction<{ taskId: string; targetSectionId: string }>) {
       const { taskId, targetSectionId } = action.payload;
 
-      let taskToMove: TaskProps;
+      let taskToMove!: TaskProps
 
       state.sections = state.sections.map((section) => {
         const newTasks = section.tasks.filter((task) => {

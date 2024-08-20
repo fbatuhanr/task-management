@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDrag, useDrop } from 'react-dnd'
+import { useDrag } from 'react-dnd'
 import { TaskProps } from '../types/task'
 import Swal from 'sweetalert2'
 import { useAppDispatch } from '../hooks/useRedux'

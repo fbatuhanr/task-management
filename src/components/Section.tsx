@@ -18,7 +18,7 @@ interface SectionComponentProps {
 }
 
 const Section: React.FC<SectionComponentProps> = ({ section, isIndexEven, moveTask }) => {
-    const { id, title, bgColor, icon, tasks } = section
+    const { title, bgColor, icon, tasks } = section
 
     const dispatch = useAppDispatch();
 
@@ -61,7 +61,7 @@ const Section: React.FC<SectionComponentProps> = ({ section, isIndexEven, moveTa
             <div style={{ backgroundColor: bgColor }} className="text-white">
                 <div className="flex items-center gap-x-0.5 text-xl h-16 px-4 shadow">
                     <div>
-                        {(icon && icon in icons) && icons[icon]}
+                        {icon && icon in icons ? icons[icon as keyof typeof icons] : null}
                     </div>
                     <div className={`${isEditing && "bg-black !bg-opacity-15"} flex-1 relative mx-2 rounded font-semibold hover:bg-black hover:bg-opacity-10 hover:cursor-text`}>
                         <input type="text" className="w-full px-2 py-1 text-white bg-transparent outline-none placeholder-gray-100 placeholder:text-sm" placeholder="Enter section title..."
